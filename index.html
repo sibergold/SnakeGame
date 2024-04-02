@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0;
+            padding: 0;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        button
+        {
+            margin-bottom: 10px;
+            width: 20%;
+            padding: 10px;
+            background-color: rgb(1,73,25);
+            color: white;
+            border-radius: 1opx;
+            box-shadow: 5px 5px 5px #ccc;
+            cursor: pointer;
+        }
+        button::hover
+        {
+            background-color: cadetblue;
+        }
+        canvas
+        {
+            box-shadow: 10px 20px 10px #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yılan Oyunu</h1>
+    <button onclick="yeniOyun()">Yeni Oyun</button>
+    <canvas id="game" width="400" height="400"></canvas>
+
+    <script src="./game.js"></script>
+</body>
+</html>
